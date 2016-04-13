@@ -285,6 +285,9 @@ li.dropdown {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+  span.glyphicon {
+  font-size: 28px; 
+}
 
 /* H E A D E R */
 
@@ -636,7 +639,7 @@ about {
 
 /* LOGIN */
 
-#login {
+log-in {
 	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; 	
 	color:#222222; 
 	font-size:14px; color: #333;
@@ -648,8 +651,7 @@ about {
 	overflow: hidden;
 	border-radius: 7px;
 */	}
-li,ul,body,input{margin:0; padding:0; list-style:none}
-.login-form{
+#login-form{
 	width:350px; 
 	background:#EBEBEB; 
 	margin:0 auto; 
@@ -658,15 +660,22 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 	overflow:hidden; 
 	border-radius:7px;
 	}
+div{display: block;
+	}
 .form-header{
 	display:table; clear:both}
+li,ul,body,input{margin:0; padding:0; list-style:none}
+li {display: list-item;
+  	}
+
 .form-header label{
 	display:block; cursor:pointer; z-index:999;}
 .form-header li{
 	margin:0; line-height:60px; 
 	width:175px; text-align:center; 
 	background:#FFEDB0; font-size:18px; 
-	float:left; transition:all 600ms ease}
+	float:left; 
+	transition: all 600ms ease;}
 
 /*sectiop*/
 .section-out{width:700px; float:left; transition:all 600ms ease;}
@@ -716,8 +725,16 @@ gada di contoh*/
 .input:focus:valid+.icon{border-color:green;}
 #check,#check1{top:1px; position:relative;}
 
+.btn{
+	border:none; outline:none; background:#0099CC; 
+	border-bottom:solid 4px #006699; 
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:0 auto; display:block; height:40px; 
+	width:100%; padding:0 10px; border-radius:3px; 
+	font-size:16px; color:#FFF
+	}
 .social-buttons
-/*.section-out .social-buttons */{
+/*.section-out .social-login */{
 	padding:15px 20px; 
 	background:#fed136; 
 	border-top:solid 2px #e8e8e8; 
@@ -735,13 +752,19 @@ gada di contoh*/
 	color: white;
 	text-decoration:none; 
 	}
+.form a i.fa{line-height:35px;}
+.remember{width:50%; display:inline-block; clear:both; font-size:14px;}
+.remember:nth-child(2){text-align:right; !important}
+.remember a{text-decoration:none; color:#666;}
 
-#login-form ul .social-buttons {
+.hide{display:none}
+
+.login-form ul .social-buttons {
   	margin-bottom: 0;
   	vertical-align: top;
   	padding: auto;
 	}
-#login-form ul .social-buttons li a {
+.login-form ul .social-buttons li a {
     display: block;
   	background-color: #222222;
   	height: 40px;
@@ -761,14 +784,6 @@ gada di contoh*/
   	background-color: #222222;
   	color: white;
 	}
-
-	
-.form a i.fa{line-height:35px;}
-.remember{width:50%; display:inline-block; clear:both; font-size:14px;}
-.remember:nth-child(2){text-align:right; !important}
-.remember a{text-decoration:none; color:#666;}
-
-.hide{display:none}
 
 /*switch form*/
 #signup:checked~.section-out{margin-left:-350px;}
@@ -1193,19 +1208,19 @@ shoppingcart{
 	}
 }
 
-/*PARTNERSHIP*/
-#partners {
+/*PARTNERS*/
+.partners {
 	padding: 300px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1a618+0,f1c40f+25,f1c40f+75,c1a618+100 */
 	background: white;
 	margin: 100px 0;
 	}
-partners i.fa {
+.partners i.fa {
 	font-size: 30px;
 	padding: -15px;
 	color: #fed136;
   	}
-partners .clearfix a img {
+.partners .clearfix a img {
 	position: relative ;
 	max-height: 250px;
 	float: center;
@@ -1214,9 +1229,10 @@ partners .clearfix a img {
 .portfolio-item img.img-responsive{
 	position: center;
 	}
-partners hr {
+.partners hr {
 	background: #fec136;
 	}
+/*
 ul.cat li {
 	display: inline-block;
 	}
@@ -1243,8 +1259,8 @@ ol.type li a:hover {
 	z-index: 1
 }
 .isotope, .isotope .isotope-item {
-	/* change duration value to whatever you like */
-	-webkit-transition-duration: 0.8s;
+	 change duration value to whatever you like */
+/*	-webkit-transition-duration: 0.8s;
 	-moz-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 }
@@ -1266,11 +1282,11 @@ ol.type li a:hover {
 	-webkit-transition-property: -webkit-transform, opacity;
 	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
-}
-.portfolio-item {
+}*/
+.portfolio-items {
 	margin-bottom: 30px;
 }
-.portfolio-item .hover-bg {
+.portfolio-items .hover-bg {
 	height: 200px;
 	overflow: hidden;
 	position: relative;
